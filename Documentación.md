@@ -24,6 +24,7 @@ docker run -p 8080:8080 hapiproject/hapi:latest
 cd src/main/resources/application.yaml
 ```
 - Habiendo accedido al directorio se cambian los parámetros para el uso de la Guía de Implementación. En este caso se va a utilizar una GI de OPS-ESAVI:
+![GI de OPS-ESAVI](GI_Site.png)
 ```
 implementationguides:
     opsesavi:
@@ -44,7 +45,7 @@ supported_resource_types:
   - ValueSet
   - Binary
 ```
-
+![Parametros de application.yaml](parameters.png)
 - Posteriormente se vuelve al directorio principal y se hace el levantamiento del Docker con los nuevos parámetros
 ```
 docker build -t test-esavi-resources-fix
@@ -52,7 +53,8 @@ docker run -d -p 8080:8080 test-esavi-resources-fix
 ```
 #### Caso Exepcional
 En este caso hubo un error al levantar el Docker, ya que no se cargaron las StructureDefinition correctamente. Para solucionar este problema se agregan manualmente
-- En Postman se hace un POST a la URL del servidor con el contenido de los artefactos que no fueron cargados previamente (ESAVIQuestionnaireResponse y CuestionarioESAVI)
+- En Postman se hace un POST a la URL del servidor con el contenido de los artefactos que no fueron cargados previamente (ESAVIQuestionnaireResponse, CuestionarioESAVI, Codesystem y ValueSet)
+![Post Questionnaire](post_q.png)
 ```
 http://74.235.201.236:8080/fhir/StructureDefinition
 http://74.235.201.236:8080/fhir/Questionnaire
