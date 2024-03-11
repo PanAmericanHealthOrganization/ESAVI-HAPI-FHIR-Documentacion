@@ -56,7 +56,8 @@ En este caso hubo un error al levantar el Docker, ya que no se cargaron las Stru
 ```
 http://74.235.201.236:8080/fhir/StructureDefinition
 http://74.235.201.236:8080/fhir/Questionnaire
-
+http://74.235.201.236:8080/fhir/Codesystem
+http://74.235.201.236:8080/fhir/ValueSet
 ```
 
 - Se hace la validación de los artefactos cargados haciendo un post con la URL del servidor y **QuestionnaireResponse/$validate**
