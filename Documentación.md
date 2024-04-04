@@ -67,5 +67,3 @@ http://74.235.201.236:8080/fhir/ValueSet
 # Conexión con DB Externa
 
 # Configuración de Parámetros
-
-# Seguridad KeyCloak
