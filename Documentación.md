@@ -70,8 +70,8 @@ http://192.168.3.4:8084/fhir/Questionnaire
 http://192.168.3.4:8084/fhir/Codesystem
 http://192.168.3.4:8084/fhir/ValueSet
 
-}http://192.168.3.4:8086/fhir/StructureDefinition
-http://192.168.3.4:8086fhir/Questionnaire
+http://192.168.3.4:8086/fhir/StructureDefinition
+http://192.168.3.4:8086/fhir/Questionnaire
 http://192.168.3.4:8086/fhir/Codesystem
 http://192.168.3.4:8086/fhir/ValueSet
 ```
