@@ -20,8 +20,15 @@ Para correr SUSHI se utliza el siguiente comando:
 ```
 sushi {directorio} {opciones}
 ```
+En opciones se pueden utilizar los siguientes comandos:
+```
+-o, --out <out>   directorio de salida (default: /build)
+-h, --help        información de las salidas
+-v, --version     indicar la versión de sushi
+-s, --snapshot    generar profile snapshots
+```
 En caso de utilizar el comando desde el mismo directorio de los archivos .fsh el comando puede ser acortado a:
 ```
 sushi .
 ```
-Correr SUSHI genera una carpeta denominada **/fsh_generated** donde se encuentran los recursos necesarios para la guía de implementación. Existen otros archivos que pueden ser generados por SUSHI  si son especificados por el autor. 
+Correr SUSHI genera una carpeta denominada **/fsh_generated** donde se encuentran los recursos necesarios para la guía de implementación. Existen otros archivos que pueden ser generados por SUSHI  si son especificados por el autor en las opciones.
