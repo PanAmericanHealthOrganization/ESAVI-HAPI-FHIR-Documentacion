@@ -1,7 +1,7 @@
 # Generación de una Guía de Implementación desde SUSHI
 SUSHI es un compilador de FHIR Shorthand (FSH) que permite generar los artefactos de una Guía de Implementación desde el lenguaje de FSH. Este puede ser usado en conjunto con Publisher para generar la versión web de una guía de implementación.
 
-# Instalación
+# Instalación de SUSHI
 Se requiere de Node.js y este se puede descargar desde https://nodejs.org/. Una vez instalado se utilizan los siguientes comandos para verificar que la instalación fue correcta:
 ```
 node --version
@@ -16,7 +16,15 @@ Se verifica la instalación con el comando:
 sushi --help
 ```
 # Usando SUSHI
-Para correr SUSHI se utliza el siguiente comando:
+
+### Generar un nuevo proyecto con SUSHI
+Para generar un proyecto con SUSHI se puede utilizar el comando ```init```, el cual puede tomar como entradas (input) archivos FSH o crearse desde cero. Una vez ejecutado el comando se solicitará información sobre el proyecto
+```
+sushi init
+```
+![SUSHI init](sushi_init.png)
+
+Para ejecutar SUSHI se utliza el siguiente comando:
 ```
 sushi {directorio} {opciones}
 ```
@@ -31,4 +39,9 @@ En caso de utilizar el comando desde el mismo directorio de los archivos .fsh el
 ```
 sushi .
 ```
-Correr SUSHI genera una carpeta denominada **/fsh_generated** donde se encuentran los recursos necesarios para la guía de implementación. Existen otros archivos que pueden ser generados por SUSHI  si son especificados por el autor en las opciones.
+![SUSHI](sushi_.png)
+
+Ejecutar SUSHI genera una carpeta denominada **/fsh_generated** donde se encuentran los recursos necesarios para la guía de implementación. Existen otros archivos que pueden ser generados por SUSHI si son especificados por el autor en las opciones.
+![SUSHI Output](sushi_output.png)
+
+# Uso de Publisher
