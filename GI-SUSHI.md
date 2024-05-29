@@ -22,7 +22,7 @@ Para generar un proyecto con SUSHI se puede utilizar el comando ```init```, el c
 ```
 sushi init
 ```
-![SUSHI init](sushi_init.png)
+![SUSHI init](Recursos/sushi_init.png)
 
 Para ejecutar SUSHI se utliza el siguiente comando:
 ```
@@ -42,7 +42,7 @@ sushi .
 ![SUSHI](sushi_.png)
 
 Ejecutar SUSHI genera una carpeta denominada **/fsh_generated** donde se encuentran los recursos necesarios para la guía de implementación. Existen otros archivos que pueden ser generados por SUSHI si son especificados por el autor en las opciones.
-![SUSHI Output](sushi_output.png)
+![SUSHI Output](Recursos/sushi_output.png)
 
 # Publicación de la GI
 Una vez creada la Guía de Implementación se procede con su publicación en el sitio de FHIR Continuous Integration (CI) build service. Este método de publicación se basa en la asociación con un repositorio de GitHub, donde cada commit resulta en una publicación en https://build.fhir.org/ig/.

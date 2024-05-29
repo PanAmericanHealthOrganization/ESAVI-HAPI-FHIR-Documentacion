@@ -24,7 +24,7 @@ Se accede al archivo **application.yaml** en el directorio **src/main/resources/
 cd src/main/resources/application.yaml
 ```
 Habiendo accedido al directorio se cambian los parámetros para el uso de la Guía de Implementación. En este caso se va a utilizar una GI de OPS-ESAVI:
-![GI de OPS-ESAVI](GI_Site.png)
+![GI de OPS-ESAVI](Recursos/GI_Site.png)
 ```
 implementationguides:
     opsesavi:
@@ -45,7 +45,7 @@ supported_resource_types:
   - ValueSet
   - Binary
 ```
-![Parametros de application.yaml](parameters.png)
+![Parametros de application.yaml](Recursos/parameters.png)
 Posteriormente se vuelve al directorio principal y se hace el levantamiento del Docker con los nuevos parámetros
 ```
 docker build -t test-esavi-resources-fix
@@ -58,7 +58,7 @@ En este caso hubo un error al levantar el Docker, ya que no se cargaron las Stru
 - ValueSet
 - CodeSystem
 
-![Post Questionnaire](post_q.png)
+![Post Questionnaire](Recursos/post_q.png)
 ```
 http://192.168.3.4:8082/fhir/StructureDefinition
 http://192.168.3.4:8082/fhir/Questionnaire
