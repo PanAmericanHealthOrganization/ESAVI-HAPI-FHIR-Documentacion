@@ -39,7 +39,7 @@ En caso de utilizar el comando desde el mismo directorio de los archivos .fsh el
 ```
 sushi .
 ```
-![SUSHI](sushi_.png)
+![SUSHI](Recursos/sushi_.png)
 
 Ejecutar SUSHI genera una carpeta denominada **/fsh_generated** donde se encuentran los recursos necesarios para la guía de implementación. Existen otros archivos que pueden ser generados por SUSHI si son especificados por el autor en las opciones.
 ![SUSHI Output](Recursos/sushi_output.png)
