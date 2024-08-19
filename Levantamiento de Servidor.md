@@ -52,7 +52,7 @@ docker build -t test-esavi-resources-fix
 docker run -d -p 8080:8080 test-esavi-resources-fix
 ```
 #### Caso Exepcional
-En este caso hubo un error al levantar el Docker, ya que no se cargaron las StructureDefinition correctamente. Para solucionar este problema se agregan manualmente. En Postman se hace un POST a laz URL del servidor con el contenido de los artefactos que no fueron cargados previamente:
+En este caso hubo un error al levantar el Docker, ya que no se cargaron las StructureDefinition correctamente. Para solucionar este problema se agregan manualmente. En Postman se hace un POST a las URL del servidor con el contenido de los artefactos que no fueron cargados previamente:
 - ESAVIQuestionnaireResponse
 - CuestionarioESAVI
 - ValueSet
