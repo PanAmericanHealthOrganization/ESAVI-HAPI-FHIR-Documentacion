@@ -83,11 +83,11 @@ Se hace la validación de los artefactos cargados haciendo un POST con la URL de
 Utilizar la operación $expand en un ValueSet permite obtener la lista de códigos que le pertenecen, los cuales pueden ser utilizados para hacer un ingreso o validaciones.
 
 #### *Sujeto a cambios*
-*Un ValueSet dentro del servidor puede ser accedido mediante su ID, la cual es única para cada servidor. En este caso, se hace un $expand al ValueSet **ClasificacionDesenlaceNaranjoVS** mediante su ID (4):*
+Un ValueSet dentro del servidor puede ser accedido mediante su ID, la cual es única para cada servidor. En este caso, se hace un $expand al ValueSet **ClasificacionDesenlaceNaranjoVS** mediante su ID (4):
 ```
 http://192.168.3.4:8086/fhir/ValueSet/4/$expand
 ```
-*Un ValueSet dentro de este servidor puede ser accedido mediante el nombre de su URL canónica, la cual es única e invariable. En este caso, se hace un $expand al ValueSet **ClasificacionDesenlaceNaranjoVS**:*
+Un ValueSet dentro de este servidor puede ser accedido mediante el nombre de su URL canónica, la cual es única e invariable. En este caso, se hace un $expand al ValueSet **ClasificacionDesenlaceNaranjoVS**:
 ```
 http://192.168.3.4:8086/fhir/ValueSet/ClasificacionDesenlaceNaranjoVS/$expand
 ```
