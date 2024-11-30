@@ -60,5 +60,5 @@ Siga los pasos en `SUSHI - Guía de Implementación.md` para generar artefactos 
 
 Para cargar grandes volúmenes de datos, use el recurso **Bundle** según las instrucciones en `Volcamiento de Volúmenes de Datos.md`:
 ```bash
-POST {baseURL}/Bundle
+POST {baseURL}
 ```
